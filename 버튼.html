@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>인사 버튼 예제</title>
+</head>
+<body>
+  <button id="greet">인사하기</button>
+  <p id="message">아직 버튼을 누르지 않았어요.</p>
+
+  <script>
+    const button = document.querySelector("#greet");
+    const message = document.querySelector("#message");
+
+    function showGreeting() {
+      alert("안녕하세요!");
+    }
+
+    button.addEventListener("click", showGreeting);
+  </script>
+</body>
+</html>
